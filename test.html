@@ -1,0 +1,636 @@
+fatima
+fatima_022024
+Invisible
+Study Group
+
+Elham changed the channel name: Study Group — 11/13/24, 1:22 PM
+Elham added fatima to the group. — Today at 11:00 AM
+Elham — Today at 11:04 AM
+<!DOCTYPE html>
+<html>
+<head>
+            <style>* {
+    margin: 0;
+    padding: 0;
+Expand
+source (32).html
+19 KB
+fatima — Today at 11:21 AM
+Short Summary of Steps
+Create a Repository: Create a hello-world repository on GitHub.
+Add Members: Add collaborators to the repository.
+Clone Locally: Clone the repository using Git and open it in VS Code.
+Create HTML File: Add a basic index.html file with "Hello, World!".
+Commit and Push: Push the initial file to GitHub.
+Branching: Create a branch, update the file, and push the branch.
+Pull Request: Create, review, and merge the pull request.
+Pull Updates: Pull the merged changes locally and verify.
+fatima — Today at 11:58 AM
+https://www.youtube.com/watch?v=EhxPBMQFCaI
+YouTube
+Coderama
+How to clone a Github Repository to your Local Machine
+Image
+Elham — Today at 12:44 PM
+Jeg har akkurat kommet hjem
+Sozdar — Today at 12:50 PM
+Vi dro hjem
+Elham — Today at 1:10 PM
+Oy
+Hva kjedde?!
+Sozdar — Today at 1:33 PM
+Vi skal jobbe hjemme
+Vi skal treffe i morgen
+Elham — Today at 1:35 PM
+Greit
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+            <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 20px; /* Added consistent padding for left alignment */
+}
+
+/* Header */
+header {
+    background-color: #FFDC00; /* Correct OsloMet Yellow */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Navigation and links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between icons and text */
+}
+
+.nav-links a {
+    color: white; /* Default color */
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effects for icons */
+.nav-links a:hover {
+    color: #FFDC00; /* Yellow color on hover */
+}
+
+/* Search Icon (loop) styling */
+.loop-icon i {
+    margin-left: 5px; /* Space between 'SØK' text and icon */
+}
+/* Menu Icon styling */
+.menu-icon {
+    font-size: 20px;
+}
+
+/* Titles underlines */
+h2, h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2:after, h3:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #FFDC00; /* Correct OsloMet Yellow */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+h2:hover:after, h3:hover:after {
+    transform: scaleX(1);
+}
+
+/* Yellow Background for Boxes */
+.yellow-background {
+    background-color: #FFDC00; /* Correct OsloMet Yellow */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    margin-left: 0; /* Ensures consistent left margin */
+}
+
+/* Hover effect on the box */
+.yellow-background:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow when hovering */
+}
+
+/* Title Underline Inside Yellow Boxes */
+.yellow-background h2, .yellow-background h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.yellow-background h2:after, .yellow-background h3:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white; /* White underline inside yellow boxes */
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.yellow-background:hover h2:after, 
+.yellow-background:hover h3:after {
+    transform: scaleX(1);
+}
+
+/* Paragraphs inside yellow boxes */
+.yellow-background p {
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Add space between sections (Specializations) */
+.specializations .specialization {
+    margin-bottom: 30px; /* Adjust space as needed */
+}
+
+
+.course-group {
+    margin-top: 40px;
+}
+
+.course-group h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Boxed Layout for Each Semester */
+.semester-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.semester-box h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.semester-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.semester-box ul li {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+/* Teaching Methods Section */
+.teaching-methods {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+  
+}
+
+.teaching-methods ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.teaching-methods ul li {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+
+/* Text Styling for List and Paragraph */
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.semester-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #FFDC00;  /* Yellow border with hex code #FFDC00 */
+    border-radius: 8px;
+}
+
+.teaching-methods{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #FFDC00;  /* Yellow border with hex code #FFDC00 */
+    border-radius: 8px;
+   
+}
+
+/* Vertical images above the footer */
+.vertical-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space before footer */
+}
+
+.vertical-images img {
+    width: 30%; /* Adjust width for the images */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+/* Footer */
+footer {
+    background-color: #FFDC00; /* Correct OsloMet Yellow */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+footer .social-media a:hover {
+    color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding-left: 10px; /* Adjust padding for mobile */
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .vertical-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-images img {
+        width: 80%; /* Adjust image width for smaller screens */
+        margin-bottom: 20px;
+    }
+}</style>
+        </head>
+        <body>
+            
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matematisk Modellering og Datavitenskap – Bachelorprogram</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <!-- Header Section with Logo and Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="PICTURES/oslomet logo.png" alt="OsloMet Logo">
+            </div>
+         <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="loop-icon">SØK <i class="fas fa-search"></i></a></li> <!-- Search Icon -->
+                    <li><a href="#" class="menu-icon">MENY ☰</a></li> <!-- Hamburger Menu Icon -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <!-- Program Title Section -->
+            <section class="program-title">
+                <h1>Matematisk Modellering og Datavitenskap – Ingeniør</h1>
+                <p>Bachelorprogram</p>
+            </section>
+
+            <video width="640" height="360" muted="" autoplay="" controls="">
+    <source src="https://film.oslomet.no/64968560/95216483/6d08e93b7e0ee74eff25a7b31746d45c/video_1080p/matematisk-modellering-og-14-video.mp4" type="video/mp4">
+</video>
+
+            <!-- Program Overview Section -->
+            <section class="overview yellow-background">
+                <h2>Studieoversikt</h2>
+                <ul>
+                    <li><strong>Studiested:</strong> Pilestredet i Oslo</li>
+                    <li><strong>Varighet:</strong> 3 år</li>
+                    <li><strong>Omfang:</strong> Heltid</li>
+                    <li><strong>Studiepoeng:</strong> 180</li>
+                    <li><strong>Studiestart:</strong> August</li>
+                    <li><strong>Undervisningsspråk:</strong> Norsk, Engelsk</li>
+                    <li><strong>Studieplasser:</strong> 40</li>
+                </ul>
+                <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+            </section>
+
+            <!-- Admission Requirements Section -->
+            <section class="requirements">
+                <h2>Opptakskrav og Poeng</h2>
+                <ul>
+                    <li>Generell studiekompetanse (samordnaopptak.no) eller oppfylle kravene til realkompetanse.</li>
+                    <li>Matematikk R1 og R2.</li>
+                    <li>Fysikk 1.</li>
+                    <li>Det kan være konkurranse om plassene.</li>
+                </ul>
+                <p>Du søker på Samordna opptak med studiekode 215 503. Fristene for søknad er 15. april og 1. mars for enkelte søkere.</p>
+            </section>
+
+            <!-- Program Learning Outcomes -->
+            <section class="learning-outcomes yellow-background">
+                <h2>Hva lærer du?</h2>
+                <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk. Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
+            </section>
+
+            <div class="container">
+            <!-- First Section: Studiets Oppbygging -->
+            <section class="program-structure">
+                <h2>Studiets Oppbygging</h2>
+
+                <!-- Valgfritt Emne Section -->
+                <div class="course-group">
+                    <h3>Valgfritt Emne - Løper over flere semestre</h3>
+                    <p><strong>1. studieår</strong></p>
+                    <div class="semester-box">
+                        <h4>1. Semester</h4>
+                        <ul>
+                            <li>Diskret matematikk (DAPE1300) - 10 stp.</li>
+                            <li>Programmering (DAPE1400) - 10 stp.</li>
+                            <li>Teknologi og samfunn for programmerere (DATA1100) - 5 stp.</li>
+                            <li>Innføring i modeller og beregninger (MAMO1100) - 5 stp.</li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-box">
+                        <h4>2. Semester</h4>
+                        <ul>
+                            <li>Matematikk 1000 (DAFE1000) - 10 stp.</li>
+                            <li>Fysikk og kjemi (DAPE2101) - 10 stp.</li>
+                            <li>Databaser (DATA1500) - 10 stp.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Add more semesters here as needed, following the same structure -->
+
+                    <p><strong>2. studieår</strong></p>
+                    <div class="semester-box">
+                        <h4>3. Semester</h4>
+                        <ul>
+                            <li>Matematikk 2000 med statistikk (DAPE2000) - 10 stp.</li>
+                            <li>Moderne fysikk (MAMO2100) - 10 stp.</li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-box">
+                        <h4>4. Semester</h4>
+                        <ul>
+                            <li>Matematikk 4000 (DAVE3705) - 10 stp.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Continue the list of semesters as above for other years -->
+                </div>
+            </section>
+
+            <!-- Second Section: Hvordan Foregår Undervisningen -->
+            <section class="teaching-methods">
+                <h2>Hvordan Foregår Undervisningen?</h2>
+                <p>Undervisningen er en kombinasjon av:</p>
+                <ul>
+                    <li>Prosjektarbeid</li>
+                    <li>Workshop</li>
+                    <li>Presentasjoner</li>
+                    <li>Veiledninger</li>
+                    <li>Diskusjoner og refleksjoner</li>
+                    <li>Forelesninger</li>
+                    <li>Selvstudier</li>
+                    <li>Gruppearbeid</li>
+                    <li>Arbeidslivsrelevant bacheloroppgave</li>
+                </ul>
+                <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.</p>
+            </section>
+        </div>
+
+            <!-- Specialization Options -->
+            <section class="specializations">
+                <h2>Spesialiseringer</h2>
+                <div class="specialization">
+                    <h3>Statistiske og Datadrevne Metoder</h3>
+                    <p>Lær hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
+                </div>
+
+                <div class="specialization">
+                    <h3>Vitenskapelige Beregninger</h3>
+                    <p>Utvikle effektive algoritmer og datastrukturer for å løse matematiske og fysiske problemer med numeriske metoder.</p>
+                </div>
+
+                <div class="specialization">
+                    <h3>Matematikk og Fysikk</h3>
+                    <p>Utforsk algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens. Lær om differensialgeometri, gruppeteori og kodeteori.</p>
+                </div>
+            </section>
+
+            <!-- Curriculum Section -->
+            <section class="curriculum yellow-background">
+                <h2>Studiets Oppbygging</h2>
+                <h3>1. Studieår</h3>
+                <ul>
+                    <li>Diskret matematikk (10 stp.)</li>
+                    <li>Programmering (10 stp.)</li>
+                    <li>Teknologi og samfunn for programmerere (5 stp.)</li>
+                    <li>Innføring i modeller og beregninger (5 stp.)</li>
+                    <li>Matematikk 1000 (10 stp.)</li>
+                    <li>Fysikk og kjemi (10 stp.)</li>
+                    <li>Databaser (10 stp.)</li>
+                </ul>
+            </section>
+
+            <section class="teaching-methods">
+                <h2>Hvordan Foregår Undervisningen?</h2>
+                <p>Undervisningen er en kombinasjon av prosjektarbeid, workshops, presentasjoner, veiledninger, diskusjoner og refleksjoner, forelesninger, selvstudier og gruppearbeid.</p>
+            </section>
+
+            <!-- Cost and Funding Section -->
+            <section class="cost yellow-background">
+                <h2>Hva Koster Det?</h2>
+                <p>Du betaler en semesteravgift hvert semester. Internasjonale studenter utenfor EU/EØS må betale studieavgift.</p>
+            </section>
+
+            <!-- Career Opportunities Section -->
+            <section class="career-opportunities">
+                <h2>Hva Kan Du Jobbe Som?</h2>
+                <p>Med dette studiet får du IT-kompetanse som er ettertraktet i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder. Datadrevne metoder og maskinlæring er svært mye brukt i arbeidslivet i dag.</p>
+            </section>
+
+            <!-- Study Abroad Opportunities -->
+            <section class="study-abroad yellow-background">
+                <h2>Utveksling</h2>
+                <p>Du kan dra på utveksling i femte semester.</p>
+            </section>
+
+            <!-- Further Studies Section -->
+            <section class="further-studies">
+                <h2>Videre Studier</h2>
+                <p>Etter fullført bachelor kan du fortsette med masterprogrammet "Anvendt data- og informasjonsteknologi" (ACIT) ved OsloMet.</p>
+            </section>
+
+            <!-- Contact Information Section -->
+            <section class="contact-info">
+                <h2>Kontakt Oss</h2>
+                <p><strong>Faglig leder:</strong> Kristoffer Herland Hellton</p>
+                <p>Telefon: +47 672 37 240 | <a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a></p>
+            </section>
+
+            <!-- Related Programs Section -->
+            <section class="related-programs">
+                <h2>Du Er Kanskje Også Interessert I</h2>
+                <ul>
+                    <li>Anvendt datateknologi – Bachelorprogram</li>
+                    <li>Bioteknologi- og kjemiingeniør – Bachelorprogram</li>
+                    <li>Byggingeniør – Bachelorprogram</li>
+                    <li>Dataingeniør – Bachelorprogram</li>
+                    <li>Elektronikkingeniør – Bachelorprogram</li>
+                    <li>Informasjonsteknologi – Bachelorprogram</li>
+                    <li>Maskiningeniør – Bachelorprogram</li>
+                    <li>Tre-terminsordning til ingeniørutdanning – Bachelorprogram</li>
+                </ul>
+            </section>
+
+            <section class="vertical-images">
+                <img src="PICTURES/maskiningenior_first.jpg" alt="Image 1">
+                <img src="PICTURES/matematisk-modellering-second.jpg" alt="Image 2">
+                <img src="PICTURES/gruppe-three.jpg" alt="Image 3">
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+    <div class="footer-content">
+        <p>© 2024 OsloMet - Oslo Metropolitan University. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.facebook.com/OsloMet" target="_blank">Facebook</a>
+            <a href="https://twitter.com/OsloMet" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/school/oslo-metropolitan-university/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+            <script></script>
+        
+    
+</body>
+source (32).html
+19 KB
